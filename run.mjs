@@ -14,7 +14,7 @@ export default async () => {
     import("./e.mjs"),
     import("./f.mjs"),
   ]);
-  a;
+  await a;
   // when `common.mjs` settles, we go to update the state
   // of the modules waiting on it. Due to the duplicate
   // ordinal, one of the modules will be skipped and
